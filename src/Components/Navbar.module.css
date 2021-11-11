@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: "segoe ui";
+  }
+  
+  .nav {
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav_title {
+    color: rgba(255, 238, 0, 0.849);
+    margin-left: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .nav > .nav_header {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav_btn {
+    display: none;
+  }
+  
+  .nav > .nav_links {
+    padding-top: 18px;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 10;
+  }
+  
+  .nav > .nav_links > a {
+    padding: 9px 16px 7px 10px;
+    text-decoration: none;
+    color: #efefef;
+    border-radius: 5px;
+    
+  }
+  
+  .nav > .nav_links > a:hover {
+    background-color: rgba(255, 238, 0, 0.849);
+  }
+  
+  .nav > #nav_check {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .nav > .nav_btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav_btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav_btn > label:hover,
+    .nav #nav_check:checked ~ .nav_btn > label {
+      background-color: rgba(238, 241, 11, 0.671);
+    }
+    .nav > .nav_btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+  
+    .nav_btn {
+      margin-top: 14px;
+    }
+    .nav > .nav_links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      margin-top: 15px;
+    }
+  
+    .nav > .nav_links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav_check:not(:checked) ~ .nav_links {
+      height: 0px;
+    }
+    .nav > #nav_check:checked ~ .nav_links {
+      height: calc(25vh - -150px);
+      overflow-y: auto;
+    }
+  }
+  .cartIcon {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  .nav_links > .accName {
+    display: none;
+  }
+  .AccountName {
+    display: block;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+  }
+  .contact {
+    color: rgba(255, 238, 0, 0.849);
+    text-align: center;
+  }
+  .AboveNav {
+    background-color: #000000;
+    display: flex;
+    text-align: center;
+  }
+  .dropbtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown_content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+  
+  @media (max-width: 940px) {
+    .contact {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 940px) {
+    .AccountName {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .AccName {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 610px) {
+    .nav {
+      justify-content: space-between;
+    }
+  }
+  

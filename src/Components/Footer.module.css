@@ -1,0 +1,114 @@
+.footer {
+    background: #242424;
+    float: left;
+    width: 100%;
+  }
+  .footer_links {
+    margin-top: 63px;
+    
+  }
+  .footer_links h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
+    line-height: 1.333;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  .footer_links ul li a {
+    font-size: 14px;
+    color: #acacac;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 0;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+  }
+  .footer_links ul li a:hover {
+    color: rgba(255, 238, 0, 0.849)!important;
+  }
+  .dwn_footer {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    width: 100%;
+    left: 0;
+  }
+  .dwn_footer span {
+    padding-left: 10px;
+    float: left;
+    color: #757575;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+  }
+  .invoice_footer {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .leftfooter {
+    float: left;
+  }
+  .leftfooter p {
+    font-size: 14px;
+    color: #757575;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    text-align: left;
+  }
+  .righttfooter {
+    float: right;
+  }
+  .about_jobby {
+    margin-top: 50px;
+  }
+  .about_jobby p {
+    font-size: 14px;
+    font-family: roboto, sans-serif;
+    color: #acacac;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .copy_social {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #353535;
+  }
+  .copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #acacac;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 3px;
+  }
+  .copyright i {
+    margin-right: 5px;
+  }
+  .copyright span {
+    color: #fff;
+  }
+  .copyright a {
+    color: #ff4500;
+  }
+  .copyright a:hover {
+    color: #ff4500 !important;
+  }
+  .social_icons {
+    text-align: right;
+    padding-top: 3px;
+  }
+  .social_icons ul li {
+    display: inline-block;
+  }
+  .social_icons ul li a {
+    font-size: 14px;
+    color: #acacac;
+    line-height: 24px;
+    margin: 0 15px;
+  }
