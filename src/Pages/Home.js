@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-// import AppSidebar from '../Components/AppSidebar'
+import style from './Home.module.css'
 import cookie from "universal-cookie";
 import { useHistory } from "react-router-dom";
 import Navbar from '../Components/Navbar';
@@ -9,7 +9,6 @@ import Footer from '../Components/Footer';
 function Home() {
     const Cookies = new cookie();
     var history = useHistory();
-    console.log(history);
     useEffect(() => {
         const Merchant_token = Cookies.get("Merchant_token");
         if (Merchant_token) {
@@ -19,11 +18,25 @@ function Home() {
     }
   },[]);
     return (
-        <div>
-           <Navbar/>
-           <Body/>
-           <Footer/>
+      <div className={style.merchant_body}>
+      <Navbar/>
+      <div  className={` row ${style.row}`}>
+      
+      <div className="col-md-6">
+        <div className={style.bodyImg}>
+        <img src="images/E-Commerce-Data-Entry.gif"/>
         </div>
+      </div>
+      <div className="col-md-5">
+      <div className={style.orderDiv}>
+        <h3 className={style.title}>All orders</h3>
+      <Body  />
+      
+      </div>
+      </div>
+     </div>
+      <Footer/>
+   </div>
     )
 }
 

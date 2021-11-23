@@ -37,24 +37,24 @@ function Navbar() {
 
         <div className={style.nav_links}>
           {User?
-          <a className={style.accName} href="//" target="_blank">
+          <a className={style.accName} href="//" >
             {User}
           </a>
           :
-          <a className={style.accName} href="//" target="_blank">
+          <a className={style.accName} href="//" >
             Account
           </a>
           }
-          <a href="//" target="_blank">
+          <a href="/merchant" >
             Home
           </a>
-          <a href="http://" target="_blank">
+          <a href="/merchant/product" >
             Products
           </a>
-          <a href="https://" target="_blank">
+          <a href="https://" >
             Contact
           </a>
-          <a href="https://" target="_blank">
+          <a href="https://" >
             About
           </a>
         </div>

@@ -1,0 +1,37 @@
+.merchant_body{
+    background-color: #e6e9ed;
+    padding-bottom: 1px;
+    /* background-image: url("https://i0.wp.com/www.designproficient.com.au/blog/wp-content/uploads/2017/11/e-commerce.gif?fit=800%2C600&ssl=1") ; */
+    width: 100%;
+
+}
+.orderDiv{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0.7px rgba(143, 140, 140, 0.582);
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 8px;
+}
+.title{
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 0px 0px 0.4px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: cursive
+}
+.orders{
+    height: 600px;
+    overflow-y: auto;
+}
+.bodyImg{
+    display: flex;
+align-items: center;
+height: 770px;
+}
+.row{
+    --bs-gutter-x: 0px;
+    
+}

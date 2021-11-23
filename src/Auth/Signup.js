@@ -20,7 +20,7 @@ function Signup() {
     if (Merchant_token) {
       history.push("/merchant")
     }else{
-      window.location.href = "/merchant/signup"
+      history.push = "/merchant/signup"
     }
   },[]);
 
@@ -38,7 +38,6 @@ function Signup() {
   const [TimeOut, setTimeOut] = useState(false);
   const [value, setValue] = useState();
   const [MobileInput, setMobileInput] = useState(false);
-  const [counter, setCounter] = useState(59)
 
   const setUpRecaptcha = () => { 
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
@@ -51,14 +50,6 @@ function Signup() {
         },
       });
   };
-
-//   useEffect(()=>{
-//     if(showActiveForm){
-//       setTimeOut(()=>{
-//         counter = counter-1
-//       },1000)
-//     }
-//   },[counter])
 
   const onSignInSubmit = (event) => {
     event.preventDefault();
@@ -128,6 +119,8 @@ function Signup() {
       })
       .catch((error) => {
         setTimeOut(true);
+       
+        
         // User couldn't sign in (bad verification code?)
         // ...
       });

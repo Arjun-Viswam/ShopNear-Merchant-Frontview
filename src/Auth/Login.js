@@ -79,7 +79,7 @@ function Login() {
                     placeholder="Enter Email Address"
                     onChange={Formik.handleChange}
                   />
-                  {Formik.errors? Formik.errors.email:null}
+                  {Formik.errors? <p style={{color:"red"}}>{Formik.errors.email}</p>:null}
                 </div>
                 <div className={style.formgroup}>
                   <input
@@ -91,7 +91,7 @@ function Login() {
                     placeholder="Enter Password"
                     onChange={Formik.handleChange}
                   />
-                  {Formik.errors? Formik.errors.password:null}
+                  {Formik.errors? <p style={{color:"red"}}>{Formik.errors.password}</p>:null}
                   {LoginError? 
                   <p style={{color:"red"}}>Email or password does not Match</p>:null}
                 </div>

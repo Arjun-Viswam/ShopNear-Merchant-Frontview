@@ -1,0 +1,97 @@
+.container {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.ProductTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.row {
+  margin-top: 61px;
+  background-color: #ffef01;
+}
+.addProductbtn {
+  margin-right: 21px;
+  background-color: black;
+  color: #ffef01;
+  width: 155px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.modalRow {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+.modalInput {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.productInput {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.timeIcon {
+  cursor: pointer;
+}
+.lrbtn {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: roboto, sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #fffb04;
+  float: left;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  margin: 30px 0 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.lrbtn:hover {
+  color: #fff !important;
+  background-color: #000000;
+}
+
+.subContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container_cropper {
+  height: 90%;
+}
+
+.slider {
+  height: 10%;
+}
+
+.container_button {
+  border: 1px solid #f5f5f5;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 300px;
+  z-index: 100;
+}
+
+.Imagerow {
+    margin-top: 25px;
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: calc(-1 * var(--bs-gutter-y)); */
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: space-around;
+}
